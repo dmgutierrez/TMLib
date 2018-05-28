@@ -26,23 +26,40 @@ sudo nano /etc/apache2/sites-available/owncloud.conf
 * Copy and paste the content below into the file and save it. Replace the highlighted line with your own domain name and directory root location.
 
 <VirtualHost *:80>
+
      ServerAdmin admin@example.com
+     
      DocumentRoot /var/www/html/owncloud/
+     
      ServerName example.com
+     
      ServerAlias www.example.com
+     
      Alias /owncloud "/var/www/html/owncloud/"
+     
      <Directory /var/www/html/owncloud/>
+        
         Options +FollowSymlinks
+        
         AllowOverride All
+        
         Require all granted
-          <IfModule mod_dav.c>
+        
+        <IfModule mod_dav.c>
             Dav off
-          </IfModule>
+          
+         </IfModule>
+        
         SetEnv HOME /var/www/html/owncloud
+        
         SetEnv HTTP_HOME /var/www/html/owncloud
+     
      </Directory>
+     
      ErrorLog ${APACHE_LOG_DIR}/error.log
+     
      CustomLog ${APACHE_LOG_DIR}/access.log combined
+
 </VirtualHost>
 
 * Save the file and exit.
