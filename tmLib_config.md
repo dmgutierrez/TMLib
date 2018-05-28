@@ -9,11 +9,17 @@ sudo nano /etc/php/7.1/apache2/php.ini
 * Make the change the following lines below in the file and save.
 
 file_uploads = On
+
 allow_url_fopen = On
+
 memory_limit = 256M
+
 upload_max_file_size = 100M
+
 display_errors = Off
+
 date.timezone = America/Chicago
+
 
 * Save the file and exit.
 
@@ -60,8 +66,8 @@ sudo nano /etc/apache2/sites-available/owncloud.conf
      
      CustomLog ${APACHE_LOG_DIR}/access.log combined
 
-
 </VirtualHost>
+
 
 
 * Save the file and exit.
