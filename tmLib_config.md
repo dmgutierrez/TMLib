@@ -60,7 +60,9 @@ sudo nano /etc/apache2/sites-available/owncloud.conf
      
      CustomLog ${APACHE_LOG_DIR}/access.log combined
 
+
 </VirtualHost>
+
 
 * Save the file and exit.
 
