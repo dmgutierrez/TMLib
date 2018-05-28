@@ -30,9 +30,7 @@ sudo nano /etc/apache2/sites-available/owncloud.conf
      DocumentRoot /var/www/html/owncloud/
      ServerName example.com
      ServerAlias www.example.com
-  
      Alias /owncloud "/var/www/html/owncloud/"
-
      <Directory /var/www/html/owncloud/>
         Options +FollowSymlinks
         AllowOverride All
@@ -43,10 +41,8 @@ sudo nano /etc/apache2/sites-available/owncloud.conf
         SetEnv HOME /var/www/html/owncloud
         SetEnv HTTP_HOME /var/www/html/owncloud
      </Directory>
-
      ErrorLog ${APACHE_LOG_DIR}/error.log
      CustomLog ${APACHE_LOG_DIR}/access.log combined
-
 </VirtualHost>
 
 * Save the file and exit.
