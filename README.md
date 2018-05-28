@@ -8,9 +8,16 @@ For now, the platform is stored in a UPM machine and the access is restricted to
 ## Requirements to install
 The following componets are required:
 
-- Linux Machine
-- Apache2
-- MySQOL/MariaDB
-- PHP
-- Owncloud
+* Linux Machine
+* Apache2
+* MySQOL/MariaDB
+* PHP
+* Owncloud
 
+## Installation step
+
+* Run the **TMLib.sh** file to install automatically all the require components.
+* Open the **TMLib_conf.md** and follow the instructions to configure correctly the environment.
+* Install the Register application by following the instructions from this repository:
+https://github.com/pellaeon/registration
+* Install the 
