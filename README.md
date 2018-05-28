@@ -19,5 +19,4 @@ The following componets are required:
 * Run the **TMLib.sh** file to install automatically all the require components.
 * Open the **TMLib_conf.md** and follow the instructions to configure correctly the environment.
 * Install the Register application by following the instructions from this repository:
-https://github.com/pellaeon/registration
-* Install the 
+https://github.com/pellaeon/registration.
